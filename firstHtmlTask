@@ -1,0 +1,288 @@
+1. 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+  <body>
+<div> guvi</div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html>
+
+3.contact us page
+<!DOCTYPE html>
+<html>
+  <title>Contact Us</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale =1.0>
+   <title>Contact Us</title>
+   <style>
+    body{
+      font-family:Arial;
+      background-color: white;
+      margin:0;
+      padding:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .contact-form{
+      background-color:white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width:500%;
+    }
+    .contact-form h2{
+      margin-bottom: 20px;
+    }
+    .contact-form label{
+      display: block;
+      margin-bottom:8px;
+    }
+    .contact-form textarea,
+    .contact-form input{
+      width:100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc ;
+      border-radius: 4px;
+    } 
+    .contact-form button{
+      background-color:green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-form button:hover{
+      background-color:  #45a049;
+    }
+
+   </style>
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          row="5"
+          col="5"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+4. lists
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ProgramList</title>
+    </head>
+    <body>
+        <ul>
+            <li>Programming Language</li>
+            <ul style="list-style-type: circle;">
+                <li>JavaScript</li>
+                <ol type="a">
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                </ol>
+                <li>Python</li>
+                <ol type="a">
+                    <li>Django Framework</li>
+                    <li>Flask Framework</li>
+                </ol>
+                <li>Java</li>
+                <ol type="a">
+                    <li>Spring</li>
+                    <li>Maven</li>
+                    <li>Hibernate</li>
+                </ol>
+            </ul>
+            <li>Database</li>
+            <ul style="list-style-type: circle">
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Cansandra</li>
+            </ul>
+        </ul>
+    </body>
+</html>
+
+5. open google in new tab
+<!DOCTYPE html>
+<html>
+    <head><title>GooglePage</title></head>
+    <body>
+        <a href="https://google.com/" target="_blank">Click here</a>
+    </body>
+</html>
+
+
+6.form with radio button
+<!DOCTYPE html>
+<html>
+    <head><title>Employee Form</title></head>
+    <body>
+        <h2>Employee Form</h1>
+            <form action="#" method="post">
+                <label for="name" >Name:</label>
+                <input type="text" id =name name= "name" required><br><br>
+                <label for ="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label>Employee Type:</label><br>
+                <input type="radio" id="salaried" name="employee_type" value="salaried" required>
+                <label for="salaried">Salaried</label><br>
+                <input type="radio" id="own_business" name="employee_type" value="salaried" required>
+                <label for="own_business">Own_business</label><br><br>
+                <label for="message">Message</label><br><br>
+                <textarea id="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="submit">
+            </form>
+    </body>
+</html>
+
+7.default form values
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form with default values</title>
+    </head>
+    <body>
+        <form action="#" method="post" >
+            <h1>Form with Default Values</h1>
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name" value="Sharmy" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="Sharmy@gmail.com" required><br><br>
+            <label for="phone">Phone:</label> 
+            <input type="tel" id="phone" name="phone" value="12345467891" required><br><br>
+            <label>Employee Type:</label> <br>
+            <input type="radio" id="salaried" name="employee_type" value="salaried" checked> 
+            <label for="salaried">Salaried</label><br>
+            <input type="radio" id="own_business" name="employee_type" value="Own_business"  >
+            <label for="own_business">own_business</label> <br><br>
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="hr">Human Resources</option>
+                <option value="it" selected>IT</option>
+                <option value="finance">Finance</option>
+            </select> <br><br>
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" value="2024-07-01"><br><br>
+            <label for="Message" > Message:</label><br>
+            <textarea id="Message" name="Message" rows="4" cols="50">Default message content</textarea><br><br>
+            <label for="newsletter">Subscribe to newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" checked><br><br>
+            <input type="submit" value="Submit here">
+        </form>
+    </body>
+</html>
+
+8.highlight without css
+<!DOCTYPE html>
+<html>
+    <head>
+    <body>
+        <ul>
+            <li><q><mark>HTML & CSS is awesome</mark></q></li>
+        </ul>
+    </body>
+</html>     
+
+9.form with all elements
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Form With All Input Types</h1>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <label for="TextInput">Text Input:</label>
+            <input type="text" id="TextInput" name="TextInput" value="Sample text"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="shinchan"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="example@example.com"><br><br>
+            <label for="phone">Telephone:</label>
+            <input type="tel" id="phone" name="phone" value="123-456-7890"><br><br>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" value="https://www.example.com"><br><br>
+            <label for="number">Number:</label>
+            <input type="number" id="url" name="url" value="42"><br><br>
+            <label for="range">Range:</label>
+            <input type="range" id="range" min="0" max="100" value="90"><br><br>
+            <label for="Date">Date:</label>
+            <input type="date" id="date" name="date" value="2024-07-17"><br><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" value="22:00"><br><br>
+            <label for="datetime-local">Datetime-local:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local" value="2024-07-17 22:02"><br><br>
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month" value="2024-07"><br><br>
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week" value="2024-W01"><br><br>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" value="#ff0001"><br><br>
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" checked><br><br>
+            <label>Radio Buttons:</label><br>
+            <input type="radio" id="optio1" name="optio1" checked>
+            <label for="optio1">Option 1</label><br>
+            <input type="radio" id="option2" name="option2">
+            <label for="option2">Option 2</label><br><br>
+            <label for="file">File Input:</label>
+            <input type="file" id="file" name="file"><br><br>
+            <label for="textarea">Textarea:</label><br>
+            <textarea id="textarea" name="textarea" rows="4"  cols="50">Default text</textarea><br><br>
+            <label for="Dropdown">Select Dropdown:</label>
+            <select id="Dropdown" name="Dropdown">
+                <option>Option1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select><br><br>
+            <label for="datalist">DataList:</label>
+            <input type="text" id="datalist-input" name="datalist-input" list="datalist-options">
+            <datalist id="datalist-options">
+               <option value="Option1">
+               <option value="Option2">
+               <option value="Option3">
+               </datalist><br><br>
+            <label for="submit">Submit Button:</label>
+            <input type="submit" id="submit" name="submit"><br><br>
+            <label for="reset">Reset Button:</label>
+            <input type="reset" id="reset" name="reset"><br><br>
+            <label for="button">Button:</label>
+            <input type="button" id="button" value="Click here" onclick="alert('Button Cliked !')"<br><br>
+        </form>
+    </body>
+</html>
